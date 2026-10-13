@@ -1,48 +1,60 @@
 # b2_clientmod
 
-**Version:** 1.0.0.0
+**Version:** 1.1.0.0
 **Autor / Author:** Krynlis aka Street
 
 ---
 
 ## Deutsch
 
-### Was macht die Mod?
-b2_clientmod ist eine kleine Fabric-Mod für Spieler auf b2-Servern. Sie meldet dem Server ein paar Aktionen, die er ohne Mod nicht mitbekommt. Dadurch kann der Server zum Beispiel beim Drücken der Inventar-Taste (Standard `E`) sein eigenes, erweitertes Inventar öffnen.
+Fügt Eventhandler hinzu, die für das Spielen auf dem **Blame2-Server** benötigt werden. Die Mod sammelt keinerlei Daten.
 
-- **Inventar-Taste:** Unterstützt der Server es, öffnet `E` direkt das Server-Inventar. Auf allen anderen Servern bleibt alles wie gewohnt.
-- **Aktionstasten:** Drei zusätzliche Tasten (Standard `R`, `G`, `V`), die der Server für eigene Funktionen nutzen kann. Unter *Optionen → Steuerung → Tastenbelegung → b2 Server* lassen sie sich ändern.
-- Die Mod ändert nichts an der Welt und sendet nur, wenn der Server sie kennt.
+### Eventhandler
+- **Verbindung:** meldet dem Server, dass die Mod installiert ist
+- **Inventar öffnen:** Taste `E`
+- **Aktionstasten 1–3:** Standard `R`, `G`, `V`, änderbar unter *Optionen → Steuerung → Tastenbelegung → b2 Server*
+
+Auf anderen Servern und im Einzelspieler sendet die Mod nichts und alles bleibt wie gewohnt.
 
 ### Voraussetzungen
-- Minecraft Java Edition 26.3
-- Fabric Loader 0.19.5 oder neuer
-- Fabric API für 26.3
-- Java 25 oder neuer
+Minecraft Java Edition 26.3 und Java 25 oder neuer, dazu einer dieser Loader:
+
+| Loader | Datei | Zusätzlich |
+|---|---|---|
+| Fabric | `b2_clientmod-fabric-…jar` | Fabric API |
+| Quilt | `b2_clientmod-fabric-…jar` | Fabric API |
+| NeoForge | `b2_clientmod-neoforge-…jar` | – |
+| Forge | `b2_clientmod-forge-…jar` | – |
 
 ### Installation
-1. Fabric Loader für Minecraft 26.3 installieren.
-2. Fabric API und `b2_clientmod.jar` (siehe Releases) in den Ordner `mods` legen.
-3. Minecraft mit dem Fabric-Profil starten und auf den Server verbinden.
+1. Den passenden Loader für Minecraft 26.3 installieren.
+2. Die passende Datei aus den Releases (bei Fabric und Quilt zusätzlich Fabric API) in den Ordner `mods` legen.
+3. Minecraft mit dem Loader-Profil starten.
 
 ---
 
 ## English
 
-### What does the mod do?
-b2_clientmod is a small Fabric mod for players on b2 servers. It tells the server about a few actions it cannot see without the mod. This lets the server open its own extended inventory when you press the inventory key (default `E`).
+Adds event handlers required for playing on the **Blame2 server**. The mod collects no data at all.
 
-- **Inventory key:** If the server supports it, `E` opens the server inventory directly. On every other server nothing changes.
-- **Action keys:** Three extra keys (default `R`, `G`, `V`) the server can use for its own features. Change them under *Options → Controls → Key Binds → b2 Server*.
-- The mod does not change the world and only sends data when the server knows it.
+### Event handlers
+- **Connection:** tells the server that the mod is installed
+- **Open inventory:** key `E`
+- **Action keys 1–3:** default `R`, `G`, `V`, changeable under *Options → Controls → Key Binds → b2 Server*
+
+On other servers and in singleplayer the mod sends nothing and everything stays as usual.
 
 ### Requirements
-- Minecraft Java Edition 26.3
-- Fabric Loader 0.19.5 or newer
-- Fabric API for 26.3
-- Java 25 or newer
+Minecraft Java Edition 26.3 and Java 25 or newer, plus one of these loaders:
+
+| Loader | File | Also needed |
+|---|---|---|
+| Fabric | `b2_clientmod-fabric-…jar` | Fabric API |
+| Quilt | `b2_clientmod-fabric-…jar` | Fabric API |
+| NeoForge | `b2_clientmod-neoforge-…jar` | – |
+| Forge | `b2_clientmod-forge-…jar` | – |
 
 ### Installation
-1. Install Fabric Loader for Minecraft 26.3.
-2. Put Fabric API and `b2_clientmod.jar` (see Releases) into the `mods` folder.
-3. Start Minecraft with the Fabric profile and join the server.
+1. Install the matching loader for Minecraft 26.3.
+2. Put the matching file from the releases (plus Fabric API for Fabric and Quilt) into the `mods` folder.
+3. Start Minecraft with the loader profile.

@@ -3,14 +3,14 @@
   "id": "b2_clientmod",
   "version": "${version}",
   "name": "b2_clientmod",
-  "description": "Sendet dem Server Ereignisse, die er sonst nicht sieht, z. B. das Öffnen des Inventars. / Tells the server about client actions it cannot see otherwise, such as opening the inventory.",
+  "description": "Adds event handlers required for playing on the Blame2 server.",
   "authors": ["Krynlis aka Street"],
   "contact": {
     "sources": "https://github.com/Krynlis/b2_clientmod"
   },
   "environment": "client",
   "entrypoints": {
-    "client": ["de.b2clientmod.B2ClientMod"]
+    "client": ["de.b2clientmod.fabric.B2ClientFabric"]
   },
   "mixins": ["b2_clientmod.mixins.json"],
   "depends": {

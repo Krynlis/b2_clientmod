@@ -1,10 +1,8 @@
-package de.b2clientmod.mixin;
+package de.b2clientmod.fabric.mixin;
 
-import de.b2clientmod.Protocol;
 import de.b2clientmod.ServerLink;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.gui.screens.inventory.InventoryScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -15,12 +13,7 @@ public abstract class GuiMixin {
 
     @Inject(method = "setScreen", at = @At("HEAD"), cancellable = true)
     private void b2clientmod$onSetScreen(Screen screen, CallbackInfo ci) {
-        if (!(screen instanceof InventoryScreen) || !ServerLink.configured()) {
-            return;
-        }
-        boolean replace = ServerLink.replacesInventory();
-        ServerLink.send(Protocol.inventory(replace));
-        if (replace) {
+        if (ServerLink.interceptScreen(screen)) {
             ci.cancel();
         }
     }

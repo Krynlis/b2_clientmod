@@ -26,7 +26,7 @@ jobs:
       - uses: actions/upload-artifact@v5
         with:
           name: b2_clientmod
-          path: build/libs/b2_clientmod.jar
+          path: '*/build/libs/b2_clientmod-*.jar'
 
   release:
     needs: build
@@ -39,6 +39,7 @@ jobs:
       - uses: actions/download-artifact@v5
         with:
           name: b2_clientmod
+          path: dist
       - name: Create tag and release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -47,5 +48,5 @@ jobs:
           if gh release view "$VERSION" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             echo "Release $VERSION already exists."
           else
-            gh release create "$VERSION" b2_clientmod.jar --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$VERSION" --notes "$(git log -1 --format=%b)"
+            gh release create "$VERSION" $(find dist -name "*.jar") --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" --title "$VERSION" --notes "$(git log -1 --format=%b)"
           fi

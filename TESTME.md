@@ -1,6 +1,6 @@
-# TESTME b2_clientmod 1.0.0.0
+# TESTME b2_clientmod 1.1.0.0
 
-Voraussetzung: Minecraft 26.3 mit Fabric Loader, Fabric API und b2_clientmod. Server mit b2_core, das den Kanal `b2:client` unterstützt.
+Voraussetzung: Minecraft 26.3 mit einem Loader (Fabric + Fabric API, Quilt + Fabric API, NeoForge oder Forge) und der passenden b2_clientmod-Datei. Tests 1 bis 11 für jeden Loader einzeln durchgehen. Server mit b2_core, das den Kanal `b2:client` unterstützt.
 
 | Nr. | Test | Erwartung |
 | --- | --- | --- |
@@ -15,3 +15,5 @@ Voraussetzung: Minecraft 26.3 mit Fabric Loader, Fabric API und b2_clientmod. Se
 | 9 | `R`, `G`, `V` drücken | Server meldet Aktion 1, 2, 3 (nur wenn ein Plugin sie nutzt) |
 | 10 | Tasten unter Steuerung → b2 Server ändern | Neue Tasten senden die Aktionen |
 | 11 | Server verlassen und neu betreten | Alles funktioniert weiter wie in 4 bis 9 |
+| 12 | Fabric-Datei unter Quilt starten | Mod lädt, Tests 2 bis 11 wie bei Fabric |
+| 13 | Mod auf einem Forge- oder NeoForge-Server ohne die Mod | Verbindung klappt, keine Meldung über fehlende Mod |

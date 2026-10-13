@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[66,)"
+license="All Rights Reserved"
+issueTrackerURL="https://github.com/Krynlis/b2_clientmod/issues"
+clientSideOnly=true
+
+[[mods]]
+modId="b2_clientmod"
+version="${version}"
+displayName="b2_clientmod"
+displayURL="https://github.com/Krynlis/b2_clientmod"
+authors="Krynlis aka Street"
+displayTest="IGNORE_ALL_VERSION"
+description='''Adds event handlers required for playing on the Blame2 server.'''
+
+[[dependencies.b2_clientmod]]
+modId="forge"
+mandatory=true
+versionRange="[66,)"
+ordering="NONE"
+side="CLIENT"
+
+[[dependencies.b2_clientmod]]
+modId="minecraft"
+mandatory=true
+versionRange="[26.3,26.4)"
+ordering="NONE"
+side="CLIENT"
