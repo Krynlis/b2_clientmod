@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "de.b2clientmod.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["GuiMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

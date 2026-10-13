@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "b2_clientmod",
+  "version": "${version}",
+  "name": "b2_clientmod",
+  "description": "Sendet dem Server Ereignisse, die er sonst nicht sieht, z. B. das Öffnen des Inventars. / Tells the server about client actions it cannot see otherwise, such as opening the inventory.",
+  "authors": ["Krynlis aka Street"],
+  "contact": {
+    "sources": "https://github.com/Krynlis/b2_clientmod"
+  },
+  "environment": "client",
+  "entrypoints": {
+    "client": ["de.b2clientmod.B2ClientMod"]
+  },
+  "mixins": ["b2_clientmod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
