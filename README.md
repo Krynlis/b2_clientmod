@@ -1,6 +1,6 @@
 # b2_clientmod
 
-**Version:** 1.1.0.0
+**Version:** 1.1.0.1
 **Autor / Author:** Krynlis aka Street
 
 ---

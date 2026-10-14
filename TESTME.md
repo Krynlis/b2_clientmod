@@ -1,4 +1,4 @@
-# TESTME b2_clientmod 1.1.0.0
+# TESTME b2_clientmod 1.1.0.1
 
 Voraussetzung: Minecraft 26.3 mit einem Loader (Fabric + Fabric API, Quilt + Fabric API, NeoForge oder Forge) und der passenden b2_clientmod-Datei. Tests 1 bis 11 für jeden Loader einzeln durchgehen. Server mit b2_core, das den Kanal `b2:client` unterstützt.
 
