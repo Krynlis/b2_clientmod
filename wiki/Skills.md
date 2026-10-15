@@ -1,6 +1,6 @@
 # Skills
 
-Es gibt 14 Skills in vier Kategorien. Alle leveln nebenbei, ihre Boni sind immer aktiv. `/skills` öffnet das Skill-Menü mit Level, XP und Boni.
+Es gibt 14 Skills in vier Kategorien. Alle leveln nebenbei, ihre Boni sind immer aktiv. Der Skills-Knopf im Menü des erweiterten Inventars (Taste E) öffnet das Skill-Menü mit Level, XP und Boni.
 
 | Kategorie | Skills | XP für | Bonus |
 |---|---|---|---|

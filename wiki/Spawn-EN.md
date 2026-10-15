@@ -1,6 +1,6 @@
 # Spawn: the flying city
 
-The spawn is a flying city high above the world, and there is only one. `/spawn` takes you there at any time.
+The spawn is a flying city high above the world, and there is only one. The spawn button in the extended inventory menu (key E) takes you there at any time.
 
 - **Main island** with a ring wall, four gatehouses, four corner towers, 24 timber-framed houses and four cherry gardens.
 - **Station tower** in the centre (88 blocks high) with a spiral staircase, clock room, copper dome and golden spire.

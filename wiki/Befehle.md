@@ -1,13 +1,11 @@
 # Befehle
 
+Inventar, Homes, Spawn und Skills erreichst du über den Menü-Knopf im erweiterten Inventar (Taste E).
+
 | Befehl | Wirkung |
 |---|---|
-| `/menu`, `/inventar` | Erweitertes Inventar und Hauptmenü öffnen |
 | `/volk` | Volk wählen oder ansehen, `/volk info` zeigt dein Volk |
-| `/tp` | Reise-Menü (Homes, Spawn, Warps) |
-| `/homes`, `/warps` | Home- bzw. Warp-Liste direkt öffnen |
-| `/spawn` | Zum Spawn reisen |
-| `/skills` | Skill-Menü |
+| `/warps` | Warp-Liste direkt öffnen |
 | `/fische` | Welche Fische hier beißen |
 | `/sichern`, `/entsichern`, `/info` | Block sichern, entsichern, Infos (danach Rechtsklick) |
 | `/vertrau`, `/misstraue <Spieler>` | Einen Block freigeben oder sperren (danach Rechtsklick) |

@@ -1,6 +1,6 @@
 # Reisen
 
-`/tp` öffnet das Reise-Menü mit drei Symbolen: **Homes**, **Spawn** und **Warps**. `/homes` und `/warps` öffnen die Listen direkt, `/spawn` bringt dich zum Spawn.
+Über den Menü-Knopf im erweiterten Inventar (Taste E) erreichst du **Homes**, **Spawn** und **Warps**. `/warps` öffnet die Warp-Liste direkt.
 
 - **Home anlegen:** In der Home-Liste auf „Neu“ klicken und einen Namen eingeben.
 - **Hinreisen:** Linksklick auf ein Home oder einen Warp.

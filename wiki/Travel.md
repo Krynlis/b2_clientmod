@@ -1,6 +1,6 @@
 # Travel
 
-`/tp` opens the travel menu with three icons: **Homes**, **Spawn** and **Warps**. `/homes` and `/warps` open the lists directly, `/spawn` takes you to spawn.
+The menu button in the extended inventory (key E) leads to **Homes**, **Spawn** and **Warps**. `/warps` opens the warp list directly.
 
 - **Create a home:** click "New" in the home list and enter a name.
 - **Travel:** left-click a home or warp.

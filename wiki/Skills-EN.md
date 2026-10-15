@@ -1,6 +1,6 @@
 # Skills
 
-There are 14 skills in four categories. They all level up as you play and their bonuses are always active. `/skills` opens the skill menu with level, XP and bonuses.
+There are 14 skills in four categories. They all level up as you play and their bonuses are always active. The skills button in the extended inventory menu (key E) opens the skill menu with level, XP and bonuses.
 
 | Category | Skills | XP for | Bonus |
 |---|---|---|---|

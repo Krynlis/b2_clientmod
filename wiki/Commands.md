@@ -1,13 +1,11 @@
 # Commands
 
+Inventory, homes, spawn and skills are reached through the menu button in the extended inventory (key E).
+
 | Command | Effect |
 |---|---|
-| `/menu`, `/inventar` | Open the extended inventory and main menu |
 | `/volk` | Choose or view your people, `/volk info` shows yours |
-| `/tp` | Travel menu (homes, spawn, warps) |
-| `/homes`, `/warps` | Open the home or warp list directly |
-| `/spawn` | Travel to spawn |
-| `/skills` | Skill menu |
+| `/warps` | Open the warp list directly |
 | `/fische` | Which fish bite here |
 | `/sichern`, `/entsichern`, `/info` | Lock, unlock, show info (then right-click) |
 | `/vertrau`, `/misstraue <player>` | Trust or untrust for one block (then right-click) |
