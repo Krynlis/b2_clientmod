@@ -1,6 +1,6 @@
 # yvelgard_clientmod
 
-**Version:** 1.2.0.0
+**Version:** 1.3.0.0
 **Autor / Author:** Krynlis aka Street
 
 ---
@@ -13,6 +13,7 @@ Fügt Eventhandler hinzu, die für das Spielen auf dem **Yvelgard-Server** benö
 
 ### Eventhandler
 - **Verbindung:** meldet dem Server, dass die Mod installiert ist
+- **Sprache:** meldet deine Spielsprache, damit Items und Texte in deiner Sprache erscheinen
 - **Inventar öffnen:** Taste `E`
 - **Aktionstasten 1–3:** Standard `R`, `G`, `V`, änderbar unter *Optionen → Steuerung → Tastenbelegung → Yvelgard*
 
@@ -46,6 +47,7 @@ Adds event handlers required for playing on the **Yvelgard server**. The mod col
 
 📖 Everything about playing on Yvelgard is in the **[wiki](https://github.com/Krynlis/yvelgard_clientmod/wiki)**.
 - **Connection:** tells the server that the mod is installed
+- **Language:** sends your game language so items and texts appear in your language
 - **Open inventory:** key `E`
 - **Action keys 1–3:** default `R`, `G`, `V`, changeable under *Options → Controls → Key Binds → Yvelgard*
 

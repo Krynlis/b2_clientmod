@@ -1,6 +1,6 @@
 ### 🇩🇪 Deutsch
 **[Startseite](Startseite)**
-- 🚀 [Erste Schritte](Erste-Schritte) · [Befehle](Befehle)
+- 🚀 [Erste Schritte](Erste-Schritte) · [Client-Mod](Client-Mod) · [Befehle](Befehle)
 - 🏰 [Völker](Voelker) · [Ränge](Raenge) · [Spawn](Spawn) · [Discord](Discord)
 - 🧭 [Reisen](Reisen) · [Sichern](Sichern)
 - 🛠️ [Kisten](Kisten) · [Werkbänke](Werkbaenke) · [Schmuck und Gems](Schmuck-und-Gems)
@@ -8,7 +8,7 @@
 
 ### 🇬🇧 English
 **[Overview](Overview)**
-- 🚀 [Getting started](Getting-Started) · [Commands](Commands)
+- 🚀 [Getting started](Getting-Started) · [Client mod](Client-Mod-EN) · [Commands](Commands)
 - 🏰 [Peoples](Peoples) · [Ranks](Ranks) · [Spawn](Spawn-EN) · [Discord](Discord-EN)
 - 🧭 [Travel](Travel) · [Locking](Locking)
 - 🛠️ [Chests](Chests) · [Workstations](Workstations) · [Jewelry and gems](Jewelry-and-Gems)

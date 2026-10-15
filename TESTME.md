@@ -1,4 +1,4 @@
-# TESTME yvelgard_clientmod 1.2.0.0
+# TESTME yvelgard_clientmod 1.3.0.0
 
 Voraussetzung: Minecraft 26.3 mit einem Loader (Fabric + Fabric API, Quilt + Fabric API, NeoForge oder Forge) und der passenden yvelgard_clientmod-Datei. Tests 1 bis 11 für jeden Loader einzeln durchgehen. Server mit dem Yvelgard-Plugin, das den Kanal `yvelgard:client` unterstützt.
 
@@ -18,3 +18,4 @@ Voraussetzung: Minecraft 26.3 mit einem Loader (Fabric + Fabric API, Quilt + Fab
 | 12 | Fabric-Datei unter Quilt starten | Mod lädt, Tests 2 bis 11 wie bei Fabric |
 | 13 | Mod auf einem Forge- oder NeoForge-Server ohne die Mod | Verbindung klappt, keine Meldung über fehlende Mod |
 | 14 | Titelbildschirm und Optionen öffnen | Knöpfe und Schieberegler in Holz mit Messingrand, beim Überfahren heller, deaktiviert dunkel; Text gut lesbar |
+| 15 | Auf Yvelgard die Spielsprache zwischen Deutsch und Englisch wechseln | Items und Menütexte wechseln ohne Neuverbindung die Sprache |

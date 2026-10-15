@@ -9,11 +9,12 @@ import java.io.UncheckedIOException;
 
 public final class Protocol {
 
-    public static final int VERSION = 1;
+    public static final int VERSION = 2;
 
     public static final int C_HELLO = 0;
     public static final int C_INVENTORY = 1;
     public static final int C_KEY = 2;
+    public static final int C_LANGUAGE = 3;
 
     public static final int S_CONFIG = 0;
     public static final int S_OPEN_INVENTORY = 1;
@@ -36,6 +37,10 @@ public final class Protocol {
 
     public static YPayload key(int index) {
         return write(C_KEY, out -> out.writeByte(index));
+    }
+
+    public static YPayload language(String code) {
+        return write(C_LANGUAGE, out -> out.writeUTF(code));
     }
 
     public static DataInputStream read(YPayload payload) {

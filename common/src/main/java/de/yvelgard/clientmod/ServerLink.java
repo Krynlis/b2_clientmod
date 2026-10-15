@@ -19,6 +19,7 @@ public final class ServerLink {
     private static Transport transport;
     private static String modVersion = "0";
     private static boolean helloSent;
+    private static String sentLanguage;
     private static boolean configured;
     private static int flags;
     private static boolean vanillaInventoryAllowed;
@@ -50,6 +51,11 @@ public final class ServerLink {
         if (!helloSent && transport.canSend()) {
             helloSent = true;
             transport.send(Protocol.hello(modVersion));
+        }
+        String language = client.options.languageCode;
+        if (helloSent && !language.equals(sentLanguage) && transport.canSend()) {
+            sentLanguage = language;
+            transport.send(Protocol.language(language));
         }
         for (int i = 0; i < YKeys.ACTIONS.length; i++) {
             while (YKeys.ACTIONS[i].consumeClick()) {
@@ -85,6 +91,7 @@ public final class ServerLink {
 
     public static void reset() {
         helloSent = false;
+        sentLanguage = null;
         configured = false;
         flags = 0;
         vanillaInventoryAllowed = false;
