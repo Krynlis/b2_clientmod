@@ -1,7 +1,7 @@
-# ⚔️ Blame2 Wiki
+# ⚔️ Yvelgard Wiki
 
-Willkommen auf **Blame2**, einem Mittelalter-RPG-Server mit vier Völkern.
-Welcome to **Blame2**, a medieval RPG server with four peoples.
+Willkommen auf **Yvelgard**, einem Mittelalter-RPG-Server mit vier Völkern.
+Welcome to **Yvelgard**, a medieval RPG server with four peoples.
 
 | 🇩🇪 Deutsch | 🇬🇧 English |
 |:---:|:---:|

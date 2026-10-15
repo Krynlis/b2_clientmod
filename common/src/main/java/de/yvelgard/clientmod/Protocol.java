@@ -1,4 +1,4 @@
-package de.b2clientmod;
+package de.yvelgard.clientmod;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -23,26 +23,26 @@ public final class Protocol {
     private Protocol() {
     }
 
-    public static B2Payload hello(String modVersion) {
+    public static YPayload hello(String modVersion) {
         return write(C_HELLO, out -> {
             out.writeInt(VERSION);
             out.writeUTF(modVersion);
         });
     }
 
-    public static B2Payload inventory(boolean replaced) {
+    public static YPayload inventory(boolean replaced) {
         return write(C_INVENTORY, out -> out.writeBoolean(replaced));
     }
 
-    public static B2Payload key(int index) {
+    public static YPayload key(int index) {
         return write(C_KEY, out -> out.writeByte(index));
     }
 
-    public static DataInputStream read(B2Payload payload) {
+    public static DataInputStream read(YPayload payload) {
         return new DataInputStream(new ByteArrayInputStream(payload.data()));
     }
 
-    private static B2Payload write(int id, Body body) {
+    private static YPayload write(int id, Body body) {
         ByteArrayOutputStream bytes = new ByteArrayOutputStream();
         try (DataOutputStream out = new DataOutputStream(bytes)) {
             out.writeByte(id);
@@ -50,7 +50,7 @@ public final class Protocol {
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }
-        return new B2Payload(bytes.toByteArray());
+        return new YPayload(bytes.toByteArray());
     }
 
     @FunctionalInterface

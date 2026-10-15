@@ -1,18 +1,18 @@
 {
   "schemaVersion": 1,
-  "id": "b2_clientmod",
+  "id": "yvelgard_clientmod",
   "version": "${version}",
-  "name": "b2_clientmod",
-  "description": "Adds event handlers required for playing on the Blame2 server.",
+  "name": "yvelgard_clientmod",
+  "description": "Adds event handlers required for playing on the Yvelgard server.",
   "authors": ["Krynlis aka Street"],
   "contact": {
-    "sources": "https://github.com/Krynlis/b2_clientmod"
+    "sources": "https://github.com/Krynlis/yvelgard_clientmod"
   },
   "environment": "client",
   "entrypoints": {
-    "client": ["de.b2clientmod.fabric.B2ClientFabric"]
+    "client": ["de.yvelgard.clientmod.fabric.YvelgardFabric"]
   },
-  "mixins": ["b2_clientmod.mixins.json"],
+  "mixins": ["yvelgard_clientmod.mixins.json"],
   "depends": {
     "fabricloader": ">=0.19.5",
     "minecraft": "~26.3",

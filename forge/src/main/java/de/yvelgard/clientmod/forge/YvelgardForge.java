@@ -1,8 +1,8 @@
-package de.b2clientmod.forge;
+package de.yvelgard.clientmod.forge;
 
-import de.b2clientmod.B2Keys;
-import de.b2clientmod.B2Payload;
-import de.b2clientmod.ServerLink;
+import de.yvelgard.clientmod.YKeys;
+import de.yvelgard.clientmod.YPayload;
+import de.yvelgard.clientmod.ServerLink;
 import io.netty.buffer.Unpooled;
 import java.util.function.Predicate;
 import net.minecraft.client.KeyMapping;
@@ -18,14 +18,14 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.network.ChannelBuilder;
 import net.minecraftforge.network.EventNetworkChannel;
 
-@Mod(B2Keys.MOD_ID)
-public final class B2ClientForge {
+@Mod(YKeys.MOD_ID)
+public final class YvelgardForge {
 
     private static EventNetworkChannel channel;
 
-    public B2ClientForge() {
-        channel = ChannelBuilder.named(B2Payload.TYPE.id()).optional().eventNetworkChannel();
-        channel.addListener(B2ClientForge::receive);
+    public YvelgardForge() {
+        channel = ChannelBuilder.named(YPayload.TYPE.id()).optional().eventNetworkChannel();
+        channel.addListener(YvelgardForge::receive);
 
         ServerLink.init(new ServerLink.Transport() {
             @Override
@@ -35,7 +35,7 @@ public final class B2ClientForge {
             }
 
             @Override
-            public void send(B2Payload payload) {
+            public void send(YPayload payload) {
                 ClientPacketListener connection = Minecraft.getInstance().getConnection();
                 if (connection != null) {
                     channel.send(new FriendlyByteBuf(Unpooled.wrappedBuffer(payload.data())), connection.getConnection());
@@ -44,7 +44,7 @@ public final class B2ClientForge {
         });
 
         RegisterKeyMappingsEvent.BUS.addListener(event -> {
-            for (KeyMapping mapping : B2Keys.create(KeyMapping.Category.register(B2Keys.CATEGORY_ID))) {
+            for (KeyMapping mapping : YKeys.create(KeyMapping.Category.register(YKeys.CATEGORY_ID))) {
                 event.register(mapping);
             }
         });
@@ -61,7 +61,7 @@ public final class B2ClientForge {
         FriendlyByteBuf buf = event.getPayload();
         byte[] bytes = new byte[buf.readableBytes()];
         buf.readBytes(bytes);
-        source.enqueueWork(() -> ServerLink.receive(new B2Payload(bytes), Minecraft.getInstance()));
+        source.enqueueWork(() -> ServerLink.receive(new YPayload(bytes), Minecraft.getInstance()));
         source.setPacketHandled(true);
     }
 }

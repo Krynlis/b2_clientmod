@@ -1,6 +1,6 @@
-# ⚔️ Blame2 – Spieler-Wiki
+# ⚔️ Yvelgard – Spieler-Wiki
 
-Alles, was du als Spieler auf Blame2 wissen musst. Neu hier? Fang mit **[Erste Schritte](Erste-Schritte)** an.
+Alles, was du als Spieler auf Yvelgard wissen musst. Neu hier? Fang mit **[Erste Schritte](Erste-Schritte)** an.
 
 ## 🚀 Einstieg
 | Seite | Inhalt |

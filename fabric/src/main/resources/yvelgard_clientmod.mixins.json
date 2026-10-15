@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "de.b2clientmod.fabric.mixin",
+  "package": "de.yvelgard.clientmod.fabric.mixin",
   "compatibilityLevel": "JAVA_25",
   "client": ["GuiMixin"],
   "injectors": {

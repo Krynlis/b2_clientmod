@@ -1,24 +1,24 @@
 modLoader="javafml"
 loaderVersion="[1,)"
 license="All Rights Reserved"
-issueTrackerURL="https://github.com/Krynlis/b2_clientmod/issues"
+issueTrackerURL="https://github.com/Krynlis/yvelgard_clientmod/issues"
 
 [[mods]]
-modId="b2_clientmod"
+modId="yvelgard_clientmod"
 version="${version}"
-displayName="b2_clientmod"
-displayURL="https://github.com/Krynlis/b2_clientmod"
+displayName="yvelgard_clientmod"
+displayURL="https://github.com/Krynlis/yvelgard_clientmod"
 authors="Krynlis aka Street"
-description='''Adds event handlers required for playing on the Blame2 server.'''
+description='''Adds event handlers required for playing on the Yvelgard server.'''
 
-[[dependencies.b2_clientmod]]
+[[dependencies.yvelgard_clientmod]]
 modId="neoforge"
 type="required"
 versionRange="[26.3,)"
 ordering="NONE"
 side="CLIENT"
 
-[[dependencies.b2_clientmod]]
+[[dependencies.yvelgard_clientmod]]
 modId="minecraft"
 type="required"
 versionRange="[26.3,26.4)"

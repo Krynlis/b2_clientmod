@@ -1,8 +1,8 @@
-package de.b2clientmod.neoforge;
+package de.yvelgard.clientmod.neoforge;
 
-import de.b2clientmod.B2Keys;
-import de.b2clientmod.B2Payload;
-import de.b2clientmod.ServerLink;
+import de.yvelgard.clientmod.YKeys;
+import de.yvelgard.clientmod.YPayload;
+import de.yvelgard.clientmod.ServerLink;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientPacketListener;
@@ -17,30 +17,30 @@ import net.neoforged.neoforge.client.network.ClientPacketDistributor;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 
-@Mod(value = B2Keys.MOD_ID, dist = Dist.CLIENT)
-public final class B2ClientNeoForge {
+@Mod(value = YKeys.MOD_ID, dist = Dist.CLIENT)
+public final class YvelgardNeoForge {
 
-    public B2ClientNeoForge(IEventBus modBus) {
+    public YvelgardNeoForge(IEventBus modBus) {
         ServerLink.init(new ServerLink.Transport() {
             @Override
             public boolean canSend() {
                 ClientPacketListener connection = Minecraft.getInstance().getConnection();
-                return connection != null && connection.hasChannel(B2Payload.TYPE);
+                return connection != null && connection.hasChannel(YPayload.TYPE);
             }
 
             @Override
-            public void send(B2Payload payload) {
+            public void send(YPayload payload) {
                 ClientPacketDistributor.sendToServer(payload);
             }
         });
 
         modBus.addListener(RegisterPayloadHandlersEvent.class, event -> event.registrar("1").optional()
-                .playBidirectional(B2Payload.TYPE, B2Payload.CODEC,
+                .playBidirectional(YPayload.TYPE, YPayload.CODEC,
                         (payload, context) -> ServerLink.receive(payload, Minecraft.getInstance())));
         modBus.addListener(RegisterKeyMappingsEvent.class, event -> {
-            KeyMapping.Category category = new KeyMapping.Category(B2Keys.CATEGORY_ID);
+            KeyMapping.Category category = new KeyMapping.Category(YKeys.CATEGORY_ID);
             event.registerCategory(category);
-            for (KeyMapping mapping : B2Keys.create(category)) {
+            for (KeyMapping mapping : YKeys.create(category)) {
                 event.register(mapping);
             }
         });

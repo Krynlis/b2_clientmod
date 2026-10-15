@@ -1,18 +1,18 @@
-package de.b2clientmod;
+package de.yvelgard.clientmod;
 
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.resources.Identifier;
 
-public final class B2Keys {
+public final class YKeys {
 
-    public static final String MOD_ID = "b2_clientmod";
+    public static final String MOD_ID = "yvelgard_clientmod";
 
     public static final Identifier CATEGORY_ID = Identifier.fromNamespaceAndPath(MOD_ID, "main");
 
     public static KeyMapping[] ACTIONS = new KeyMapping[0];
 
-    private B2Keys() {
+    private YKeys() {
     }
 
     public static KeyMapping[] create(KeyMapping.Category category) {

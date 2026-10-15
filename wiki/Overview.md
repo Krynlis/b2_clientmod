@@ -1,6 +1,6 @@
-# ⚔️ Blame2 – Player Wiki
+# ⚔️ Yvelgard – Player Wiki
 
-Everything you need to know as a player on Blame2. New here? Start with **[Getting started](Getting-Started)**.
+Everything you need to know as a player on Yvelgard. New here? Start with **[Getting started](Getting-Started)**.
 
 ## 🚀 Getting started
 | Page | Content |

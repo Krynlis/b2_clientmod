@@ -1,4 +1,4 @@
-package de.b2clientmod;
+package de.yvelgard.clientmod;
 
 import java.io.DataInputStream;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public final class ServerLink {
     public interface Transport {
         boolean canSend();
 
-        void send(B2Payload payload);
+        void send(YPayload payload);
     }
 
     private static Transport transport;
@@ -32,7 +32,7 @@ public final class ServerLink {
     }
 
     private static String readVersion() {
-        try (InputStream in = ServerLink.class.getResourceAsStream("/b2_clientmod.properties")) {
+        try (InputStream in = ServerLink.class.getResourceAsStream("/yvelgard_clientmod.properties")) {
             Properties props = new Properties();
             if (in != null) {
                 props.load(in);
@@ -51,8 +51,8 @@ public final class ServerLink {
             helloSent = true;
             transport.send(Protocol.hello(modVersion));
         }
-        for (int i = 0; i < B2Keys.ACTIONS.length; i++) {
-            while (B2Keys.ACTIONS[i].consumeClick()) {
+        for (int i = 0; i < YKeys.ACTIONS.length; i++) {
+            while (YKeys.ACTIONS[i].consumeClick()) {
                 if (configured) {
                     send(Protocol.key(i + 1));
                 }
@@ -69,7 +69,7 @@ public final class ServerLink {
         return replace;
     }
 
-    public static void receive(B2Payload payload, Minecraft client) {
+    public static void receive(YPayload payload, Minecraft client) {
         try (DataInputStream in = Protocol.read(payload)) {
             int id = in.readUnsignedByte();
             if (id == Protocol.S_CONFIG) {
@@ -90,7 +90,7 @@ public final class ServerLink {
         vanillaInventoryAllowed = false;
     }
 
-    private static void send(B2Payload payload) {
+    private static void send(YPayload payload) {
         if (transport.canSend()) {
             transport.send(payload);
         }
