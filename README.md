@@ -9,6 +9,8 @@
 
 Fügt Eventhandler hinzu, die für das Spielen auf dem **Blame2-Server** benötigt werden. Die Mod sammelt keinerlei Daten.
 
+📖 Alles zum Spielen auf Blame2 steht im **[Wiki](https://github.com/Krynlis/b2_clientmod/wiki)**.
+
 ### Eventhandler
 - **Verbindung:** meldet dem Server, dass die Mod installiert ist
 - **Inventar öffnen:** Taste `E`
@@ -38,6 +40,8 @@ Minecraft Java Edition 26.3 und Java 25 oder neuer, dazu einer dieser Loader:
 Adds event handlers required for playing on the **Blame2 server**. The mod collects no data at all.
 
 ### Event handlers
+
+📖 Everything about playing on Blame2 is in the **[wiki](https://github.com/Krynlis/b2_clientmod/wiki)**.
 - **Connection:** tells the server that the mod is installed
 - **Open inventory:** key `E`
 - **Action keys 1–3:** default `R`, `G`, `V`, changeable under *Options → Controls → Key Binds → b2 Server*
